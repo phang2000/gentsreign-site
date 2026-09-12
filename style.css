@@ -1,0 +1,29 @@
+:root{
+  --paper:#EFECE3;--surface:#E6E2D6;--ink:#0A0A09;--body:#2B2A24;--muted:#6F6A5A;--rule:#CFC9B6;--acid:#B6D536;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0A0A09;--surface:#151510;--ink:#F2EFE7;--body:#CFC9B6;--muted:#8F8874;--rule:#2C2B22;}
+}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{margin:0;background:var(--paper);color:var(--body);font:400 17px/1.6 "Source Serif 4","Iowan Old Style",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px 80px}
+h1,h2,h3{font-family:Figtree,"Helvetica Neue",Arial,sans-serif;color:var(--ink);letter-spacing:-.02em;margin:0}
+h1{font-weight:900;font-size:clamp(2.4rem,7vw,4.2rem);line-height:.98;letter-spacing:-.04em;text-transform:uppercase;text-wrap:balance}
+h1.small{font-size:clamp(2rem,5vw,3rem)}
+h2{font-weight:800;font-size:1.35rem;line-height:1.15;margin-top:2.4rem}
+p{margin:.9rem 0}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;justify-content:space-between;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--rule)}
+nav .brand{font-family:Figtree,sans-serif;font-weight:900;color:var(--ink);text-decoration:none;letter-spacing:-.03em;text-transform:uppercase}
+nav .links a{margin-left:18px;font-family:Figtree,sans-serif;font-weight:700;font-size:.9rem;text-decoration:none;color:var(--muted)}
+nav .links a:hover{color:var(--ink)}
+header.hero{padding:72px 0 40px}
+.lede{font-size:1.2rem;line-height:1.5;max-width:52ch}
+.pillars{list-style:none;padding:0;margin:2rem 0 0;border-top:1px solid var(--rule)}
+.pillars li{display:grid;grid-template-columns:3.2rem 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.pillars strong{font-family:Figtree,sans-serif;font-weight:800;color:var(--ink);display:block}
+.cta{display:inline-block;margin-top:2.2rem;padding:14px 22px;background:var(--ink);color:var(--paper);font-family:Figtree,sans-serif;font-weight:800;text-decoration:none;border-left:6px solid var(--acid)}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.85rem;color:var(--muted)}
+footer a{color:var(--muted)}
